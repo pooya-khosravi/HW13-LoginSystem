@@ -1,0 +1,13 @@
+<div class="information-panel">
+    <% for(let key in thisUserObject ) { %>
+        <div class="row-info">
+            <div class="title"> <%= key %>:  </div>
+            <div class="value" id="<%= key %>" ><%= thisUserObject[key] %></div>
+        </div>
+    <% } %>
+
+    <div class="panel-buttons">
+        <button class="submit-edit">ثبت ویرایش</button>
+        <button class="cancel-edit">لغو</button>
+    </div>
+</div>

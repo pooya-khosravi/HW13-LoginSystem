@@ -1,0 +1,80 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+#parent{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(0, 0, 0,0.5);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#parent #p1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#parent #p2{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+#parent #p3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+}
+
+#parent #p3 a{
+    color: red;
+}
+
+#parent .input-group-text {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#parent .pad{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#parent .btn-primary {
+    width: 420px;
+    margin-left: 8%;
+    background-color: green;
+    border: none;
+}
+
+#parent #validationCustomUsername{
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#parent .input-group-text {
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+#parent  .form-control {
+    direction: rtl;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- import duplicate head tag -->
+    <%- include ("../partials/headTag.ejs") -%> 
+    <link rel="stylesheet" href="../../CSS/dashboard.css">
+    <title>Profile: <%= thisUserObject.userName %> </title>
+</head>
+
+<body>
+
+    <div class="profileHead-parent">
+        <div class="profile-picture">
+            <div id="yourPicture">
+                <img src="../../images/users.png" alt="yourProfilePicture">
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <button id="out">خروج از صفحه کاربری</button>
+            <button id="edit">ویرایش اطلاعات</button>
+        </div>
+    </div>
+
+    <div class="info-parent">
+        <!-- import information panel -->
+        <%- include ("../partials/bodyDashboard-userInformationPanel", {thisUserObject}) -%> 
+    </div>
+
+    <!-- import script tags duplicate -->
+    <%- include ("../partials/body-scripts.ejs") -%> 
+    <script src="../../JS/dashboard.js"></script>
+</body>
+
+</html>

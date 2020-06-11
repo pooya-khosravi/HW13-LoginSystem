@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- import duplicate head tag -->
+    <%- include ("../partials/headTag.ejs") -%> 
+    <link rel="stylesheet" href="../../CSS/loginPage.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <img src="../../images/ghayegh.jpg" alt="ghayegh">
+
+    <form action="/dashboard" method="post" id="parent">
+        <p id="p1">ورود به پل کاربری</p>
+
+        <div class="pad">
+            <div class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="userName" placeholder="نام کاربری" class="form-control" id="customUsername"aria-describedby="inputGroupPrepend" required>
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">
+                            <i class="far fa-user"></i>
+                        </span>
+                    </div>
+                    <div id="userFeedBack" class="invalid-feedback" style="text-align: right;">
+                        *الزامی
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pad">
+            <div class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="password" placeholder="رمز عبور" class="form-control" id="customPassword"aria-describedby="inputGroupPrepend" required>
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                    <div id="passFeedBack" class="invalid-feedback" style="text-align: right;">
+                        *الزامی
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="loginButton" class="btn btn-primary">ورود</button>
+
+        <p id="p2">حساب کاربری ندارید؟ <a href="/singUp"> ثبت نام کنید</a></p>
+        <p id="p3"> <a href="/sendMail">رمزعبور خود را فراموش کردید؟</a> </p>
+    </form>
+
+    <!-- import script tags duplicate -->
+    <%- include ("../partials/body-scripts.ejs") -%> 
+    <script src="../../JS/loginPage.js"></script>
+</body>
+
+</html>

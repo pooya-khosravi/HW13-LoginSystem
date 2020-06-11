@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- import duplicate head tag -->
+    <%- include ("../partials/headTag.ejs") -%>
+    <link rel="stylesheet" href="../../CSS/singUpPage.css">
+    <title>Sing Up</title>
+</head>
+
+<body>
+    <h1 class="title">Your SingUp Form</h1>
+
+    <div class="parent-singUp">
+        <div class="formParent">
+            <div class="form-group row">
+                <label for="inputUserName" class="col-sm-2 col-form-label">UserName:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUserName" placeholder=".الزامی میباشد">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder=".الزامی میباشد">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-10 passwordBox">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder=".الزامی میباشد">
+                    <span> <i class="fa fa-eye-slash passwordIcon"></i> </span>
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="male"
+                                checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="female">
+                            <label class="form-check-label" for="gridRadios2">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- import script tags duplicate -->
+    <%- include ("../partials/body-scripts.ejs") -%>
+    <script src="../../JS/singUpPage.js"></script>
+</body>
+
+</html>
